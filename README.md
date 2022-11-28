@@ -62,3 +62,10 @@ nnc deploy hello src/services/helloFast.ts
 ```
 
 Tip: Use the `-w` flag to watch your code and keep your deployment up to date.
+
+8. Make a request to the service:
+
+```
+$ nnc 'hello.run()'
+Hello world!
+```
