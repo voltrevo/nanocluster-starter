@@ -71,6 +71,32 @@ $ nnc 'hello.run()'
 Hello world!
 ```
 
+10. Call the service programmatically:
+
+See `callHello.ts`:
+
+```ts
+import connectServices from "../src/nanocluster/lib/connectServices.ts";
+import nt from "../src/nanocluster/nt/mod.ts";
+
+const { hello } = await connectServices("https://example-public.nanocluster.io/rpc", {
+  hello: {
+    run: nt.fn()(nt.string),
+  },
+});
+
+console.log(await hello.run());
+```
+
+Replace `https://example-public.nanocluster.io/rpc` with your public RPC endpoint.
+
+```
+$ deno run --allow-net programs/callHello.ts
+Hello world!
+```
+
+This code can also run in the browser. [Packup](https://deno.land/x/packup@v0.2.2) is a good tool for doing this using deno tooling. Otherwise, `connectServices` is also available using the [`nanocluster` npm module](https://www.npmjs.com/package/nanocluster).
+
 ## Copyright Waiver
 
-Unless stated otherwise ([example](./src/nanocluster/common/basex.ts)), copyright and related rights for all material in this repository is waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+Unless stated otherwise ([example](./src/nanocluster/common/basex.ts)), copyright and related rights for all material in this repository are waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
