@@ -1,4 +1,4 @@
-import { ClusterApi } from "../../nanocluster-lib/ClusterProtocol.ts";
+import { ClusterApi } from "../../lib/ClusterProtocol.ts";
 
 export default async function status(cluster: ClusterApi) {
   try {

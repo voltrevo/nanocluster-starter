@@ -1,5 +1,5 @@
 import nil from "../../common/nil.ts";
-import { ClusterApi } from "../../nanocluster-lib/ClusterProtocol.ts";
+import { ClusterApi } from "../../lib/ClusterProtocol.ts";
 
 export default async function undeploy(
   cluster: ClusterApi,

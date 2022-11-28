@@ -1,5 +1,5 @@
 import nil from "../../common/nil.ts";
-import { ClusterApi } from "../../nanocluster-lib/ClusterProtocol.ts";
+import { ClusterApi } from "../../lib/ClusterProtocol.ts";
 import Parser, { ServiceCall } from "./Parser.ts";
 
 export function parse(...args: string[]): ServiceCall | nil {

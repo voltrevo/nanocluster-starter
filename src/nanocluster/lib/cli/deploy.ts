@@ -1,7 +1,7 @@
 import nil from "../../common/nil.ts";
 import JsonBundle from "../../json-bundle/mod.ts";
 import watchDeploy from "./watchDeploy.ts";
-import { ClusterApi } from "../../nanocluster-lib/ClusterProtocol.ts";
+import { ClusterApi } from "../../lib/ClusterProtocol.ts";
 
 export default async function deploy(
   cluster: ClusterApi,
