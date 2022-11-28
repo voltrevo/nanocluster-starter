@@ -95,7 +95,7 @@ $ deno run --allow-net programs/callHello.ts
 Hello world!
 ```
 
-This code can also run in the browser. [Packup](https://deno.land/x/packup@v0.2.2) is a good tool for doing this using deno tooling. Otherwise, `connectServices` is also available using the [`nanocluster` npm module](https://www.npmjs.com/package/nanocluster).
+This code can also run in the browser. [Packup](https://deno.land/x/packup@v0.2.2) is a good tool for doing this using deno tooling. Otherwise, `connectServices` is also available using the [`nanocluster`](https://www.npmjs.com/package/nanocluster) npm module.
 
 ## Copyright Waiver
 
