@@ -12,8 +12,9 @@ If you'd like an invite, there's a few ways you can get in touch:
 ## Instructions
 
 1. [Fork](https://github.com/voltrevo/nanocluster-starter/fork) this repo
-2. Install [deno](https://deno.land)
-3. Install `nnc`
+2. Delete the copyright waiver section from this file (unless you want CC0 to apply to your work)
+3. Install [deno](https://deno.land)
+4. Install `nnc`
 
 ```sh
 deno install -n nnc --allow-read --allow-net --allow-run --allow-env programs/cli.ts
@@ -21,7 +22,7 @@ deno install -n nnc --allow-read --allow-net --allow-run --allow-env programs/cl
 
 Note: If you'd like to be prompted about system access from `nnc`, you can remove `--allow-*` flags.
 
-4. Create `~/.nnc/config.json` with content like this:
+5. Create `~/.nnc/config.json` with content like this:
 
 ```json
 {
@@ -33,7 +34,7 @@ Note: If you'd like to be prompted about system access from `nnc`, you can remov
 }
 ```
 
-5. Check your set-up by running `nnc status`, you should get a result like this:
+6. Check your set-up by running `nnc status`, you should get a result like this:
 
 ```json
 {
@@ -54,8 +55,8 @@ Note: If you'd like to be prompted about system access from `nnc`, you can remov
 }
 ```
 
-6. If you're a VS Code user, install the deno extension (VS Code should prompt you about this)
-7. Deploy your first service:
+7. If you're a VS Code user, install the deno extension (VS Code should prompt you about this)
+8. Deploy your first service:
 
 ```sh
 nnc deploy hello src/services/helloFast.ts
@@ -63,9 +64,13 @@ nnc deploy hello src/services/helloFast.ts
 
 Tip: Use the `-w` flag to watch your code and keep your deployment up to date.
 
-8. Make a request to the service:
+9. Call the service:
 
 ```
 $ nnc 'hello.run()'
 Hello world!
 ```
+
+## Copyright Waiver
+
+Unless stated otherwise, copyright and related rights for all material in this repository is waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).

@@ -3,7 +3,6 @@ import LogsResponse from "./LogsResponse.ts";
 import nt from "../nt/mod.ts";
 import StatusResponse from "./StatusResponse.ts";
 import proto from "../comms/proto.ts";
-import ServiceStatus from "./ServiceStatus.ts";
 import ServiceMetadata from "./ServiceMetadata.ts";
 import LogMessage from "./LogMessage.ts";
 import ClusterPublicProtocol from "./ClusterProtocolPublic.ts";
