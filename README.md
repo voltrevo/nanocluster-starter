@@ -73,4 +73,4 @@ Hello world!
 
 ## Copyright Waiver
 
-Unless stated otherwise, copyright and related rights for all material in this repository is waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+Unless stated otherwise ([example](./src/nanocluster/common/basex.ts)), copyright and related rights for all material in this repository is waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
