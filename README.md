@@ -11,7 +11,7 @@ If you'd like an invite, there's a few ways you can get in touch:
 
 ## Instructions
 
-1. [Fork](https://github.com/voltrevo/nanocluster-starter/fork) this repo
+1. [Use this template](https://github.com/voltrevo/nanocluster-starter/generate) to create your own repo
 2. Delete the copyright waiver section from this file (unless you want CC0 to apply to your work)
 3. Install [deno](https://deno.land)
 4. Install `nnc`
